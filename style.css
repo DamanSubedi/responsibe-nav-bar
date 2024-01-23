@@ -1,0 +1,117 @@
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+body{
+    background: aliceblue;
+}
+
+nav{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 2px 5px gray;
+}
+
+.logo{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    color: blue;
+    width: 180px;
+    padding: 10px;
+    height: auto;
+}
+
+
+.logo span{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: red;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin: 5px;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: brown;  
+    height: 30px;
+    width: fit-content; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid brown;
+}
+
+nav ul li:hover{
+   transition: .5s .2s ease-in-out;
+   background: brown;
+   color: white;
+}
+
+nav div #menuBar{
+    font-size: 25px;
+    color: brown;
+    display: none;
+}
+
+.show-Menu{
+    display: flex;
+}
+
+
+/* media Queries */
+
+
+
+@media (max-width : 768px){
+    nav div #menuBar{
+        display: flex;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        /* right: 100px; */
+        overflow-x: hidden;
+        width: 100vw;
+        background: white;
+        align-items: center;
+        box-shadow: 2px 2px 5px gray;
+        height: auto;
+        /* overflow-y: hidden; */
+    }
+
+    /* nav ul.active{
+        display: flex;
+    } */
+}
